@@ -1,5 +1,5 @@
 //FUNCIÓN PARA GENERAR NÚMEROS ALEATORIOS
-function numeroAleatorio( min , max ) {
+function aleatorio( min , max ) {
     return Math.floor( Math.random() * ( max - min + 1 ) + min );
 }
 //funcion para mirar que se eligio
@@ -19,7 +19,7 @@ function eleccion (jugada){
 
 let jugador = 0
 let triunfos = 0
-let derrotas = 0
+let perdidas = 0
 let pc = 0
 
 while(triunfos < 3 && perdidas < 3){
@@ -46,5 +46,5 @@ while(triunfos < 3 && perdidas < 3){
     }
 }
 
-
+alert("ganaste:" + triunfos + "perdiste: " + perdidas)
 
